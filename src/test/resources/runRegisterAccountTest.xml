@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="TRS">
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+    <listener class-name="reportConfig.AllureTestListener"/>
+  </listeners>
+  <parameter name = "environmentName" value="local"/>
+<!--  <parameter name = "serverName" value="test"/>-->
+
+  <test name="Run on FIREFOX" preserve-order="true">
+  <parameter name="browserName" value ="firefox"/>
+    <classes>
+      <class name="trs.Register_Account"/>
+    </classes>
+  </test>  
+  
+</suite> 
